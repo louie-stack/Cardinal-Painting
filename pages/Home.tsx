@@ -110,7 +110,11 @@ const Home: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2 reveal">
               <div className="relative">
-                <img src="/images/familyvalues.jpg"   alt="Cardinal Painting Crew"   className="rounded shadow-2xl relative z-10" />
+                <img
+  src="/images/familyvalues.jpg"
+  alt="Cardinal Painting Crew"
+  className="rounded shadow-2xl relative z-10"
+/>
                 <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#F5F1EA] -z-0"></div>
                 <div className="absolute -top-6 -left-6 w-48 h-48 border-4 border-[#9B1B30] -z-0"></div>
               </div>
