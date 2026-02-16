@@ -26,22 +26,32 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-[#FAF9F6] py-4'}`}>
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? 'bg-white shadow-md py-2' : 'bg-[#FAF9F6] py-4'
+      }`}
+    >
       <div className="w-full px-4 md:px-10 lg:px-20">
         <div className="flex justify-between items-center">
-          
+
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <img
-              src="/images/logo-cardinal.png"
-              alt="Cardinal Painting Logo"
-              className="h-12 w-auto transition-transform group-hover:scale-105"
-            />
-            <div className="flex flex-col items-start">
-              <span className="text-[#333333] font-bold text-lg md:text-xl leading-none uppercase tracking-tight">
+            
+            {/* Rounded Icon Container */}
+            <div className="bg-white p-1.5 rounded-xl shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-0.5">
+              <img
+                src="/images/logo-cardinal.png"
+                alt="Cardinal Painting Logo"
+                className="h-10 w-10 object-contain rounded-lg"
+              />
+            </div>
+
+            {/* Text */}
+            <div className="flex flex-col items-start leading-none">
+              <span className="text-[#333333] font-bold text-lg md:text-xl uppercase tracking-tight">
                 Cardinal
               </span>
-              <span className="text-[#9B1B30] text-[10px] md:text-xs font-bold uppercase tracking-[0.05em] -mt-1">
+              <span className="text-[#9B1B30] text-[11px] md:text-xs font-bold uppercase tracking-[0.08em] mt-0.5">
                 Painting
               </span>
             </div>
@@ -70,7 +80,7 @@ const Header: React.FC = () => {
             </Link>
           </nav>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Toggle */}
           <div className="lg:hidden flex items-center space-x-4">
             <a
               href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`}
