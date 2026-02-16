@@ -8,20 +8,34 @@ const Footer: React.FC = () => {
     <footer className="bg-white border-t border-gray-200 pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
           {/* Brand Info */}
           <div>
-            <Link to="/" className="flex items-center space-x-2 mb-6 group">
-              <div className="w-10 h-10 bg-[#9B1B30] rounded-lg flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-105">
-                <span className="font-bold text-xl">C</span>
+            <Link to="/" className="flex items-center space-x-3 mb-6 group">
+              
+              {/* Rounded Icon Container (Matches Header) */}
+              <div className="bg-white p-1.5 rounded-xl shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-0.5">
+                <img
+                  src="/images/logo-cardinal.png"
+                  alt="Cardinal Painting Logo"
+                  className="h-10 w-10 object-contain rounded-lg"
+                />
               </div>
-              <div className="flex flex-col items-start">
-                <span className="text-[#333333] font-bold text-lg md:text-xl leading-none uppercase tracking-tight">Cardinal</span>
-                <span className="text-[#9B1B30] text-[10px] md:text-xs font-semibold tracking-[0.21em] uppercase -mt-0.5">Painting</span>
+
+              <div className="flex flex-col items-start leading-none">
+                <span className="text-[#333333] font-bold text-lg md:text-xl uppercase tracking-tight">
+                  Cardinal
+                </span>
+                <span className="text-[#9B1B30] text-[11px] md:text-xs font-semibold uppercase tracking-[0.08em] mt-0.5">
+                  Painting
+                </span>
               </div>
             </Link>
+
             <p className="text-gray-600 mb-6 text-sm leading-relaxed">
               Serving Gilbert and the East Valley with professional painting since 2007. Family-owned and operated with over 30 years of industry experience.
             </p>
+
             <div className="flex space-x-4">
               <a 
                 href="https://www.facebook.com/people/Cardinal-Painting/61572665441061/" 
@@ -52,7 +66,12 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3 text-sm text-gray-600">
                 <Phone className="w-5 h-5 text-[#9B1B30] shrink-0" />
-                <a href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`} className="hover:text-[#9B1B30] transition-colors">{COMPANY_INFO.phone}</a>
+                <a 
+                  href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`} 
+                  className="hover:text-[#9B1B30] transition-colors"
+                >
+                  {COMPANY_INFO.phone}
+                </a>
               </li>
               <li className="flex items-start space-x-3 text-sm text-gray-600">
                 <Clock className="w-5 h-5 text-[#9B1B30] shrink-0" />
@@ -87,6 +106,7 @@ const Footer: React.FC = () => {
               ))}
             </ul>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
@@ -94,6 +114,7 @@ const Footer: React.FC = () => {
           <p>© {new Date().getFullYear()} {COMPANY_INFO.name}. All Rights Reserved.</p>
           <p className="mt-2 md:mt-0">Licensed & Insured • Painting Contractor Gilbert AZ</p>
         </div>
+
       </div>
     </footer>
   );
