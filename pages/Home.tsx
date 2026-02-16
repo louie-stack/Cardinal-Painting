@@ -37,7 +37,7 @@ const Home: React.FC = () => {
         {/* Right Side: Image Panel - Adjusted to approx 55% width */}
         <div className="lg:w-[55%] h-[40vh] lg:h-full relative">
           <img
-            src="https://picsum.photos/seed/gilbert-exterior/1200/1200"
+            src="/images/hero-main.jpg"
             alt="Professional Painting Services"
             className="absolute inset-0 w-full h-full object-cover"
           />
