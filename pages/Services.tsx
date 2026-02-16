@@ -105,7 +105,7 @@ const Services: React.FC = () => {
           "Drywall repair",
           "Surface preparation & patching"
         ]}
-        image="/images/interior.jpg"
+        image="/images/service-interior.jpg"
       />
 
       <ServiceSection
