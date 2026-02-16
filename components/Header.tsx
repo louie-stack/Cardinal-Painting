@@ -29,14 +29,21 @@ const Header: React.FC = () => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-[#FAF9F6] py-4'}`}>
       <div className="w-full px-4 md:px-10 lg:px-20">
         <div className="flex justify-between items-center">
+          
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 bg-[#9B1B30] rounded-lg flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-105">
-              <span className="font-bold text-xl">C</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img
+              src="/images/logo-cardinal.png"
+              alt="Cardinal Painting Logo"
+              className="h-12 w-auto transition-transform group-hover:scale-105"
+            />
             <div className="flex flex-col items-start">
-              <span className="text-[#333333] font-bold text-lg md:text-xl leading-none uppercase tracking-tight">Cardinal</span>
-              <span className="text-[#9B1B30] text-[10px] md:text-xs font-bold uppercase tracking-[0.05em] -mt-1">Painting</span>
+              <span className="text-[#333333] font-bold text-lg md:text-xl leading-none uppercase tracking-tight">
+                Cardinal
+              </span>
+              <span className="text-[#9B1B30] text-[10px] md:text-xs font-bold uppercase tracking-[0.05em] -mt-1">
+                Painting
+              </span>
             </div>
           </Link>
 
@@ -47,7 +54,9 @@ const Header: React.FC = () => {
                 key={link.name}
                 to={link.path}
                 className={`text-sm font-semibold transition-colors uppercase tracking-wider ${
-                  location.pathname === link.path ? 'text-[#9B1B30]' : 'text-[#333333] hover:text-[#9B1B30]'
+                  location.pathname === link.path
+                    ? 'text-[#9B1B30]'
+                    : 'text-[#333333] hover:text-[#9B1B30]'
                 }`}
               >
                 {link.name}
@@ -63,10 +72,16 @@ const Header: React.FC = () => {
 
           {/* Mobile Menu Toggle */}
           <div className="lg:hidden flex items-center space-x-4">
-            <a href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`} className="text-[#9B1B30] p-2">
+            <a
+              href={`tel:${COMPANY_INFO.phone.replace(/\D/g, '')}`}
+              className="text-[#9B1B30] p-2"
+            >
               <Phone className="w-6 h-6" />
             </a>
-            <button onClick={() => setIsOpen(!isOpen)} className="text-[#333333] p-2">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-[#333333] p-2"
+            >
               {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
             </button>
           </div>
@@ -81,7 +96,9 @@ const Header: React.FC = () => {
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`text-lg font-bold py-2 ${
-                  location.pathname === link.path ? 'text-[#9B1B30]' : 'text-[#333333]'
+                  location.pathname === link.path
+                    ? 'text-[#9B1B30]'
+                    : 'text-[#333333]'
                 }`}
               >
                 {link.name}
