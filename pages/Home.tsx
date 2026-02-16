@@ -153,10 +153,10 @@ const Home: React.FC = () => {
             <div className="space-y-4">
               <div className="relative group reveal">
                 <img 
-                  src="/images/before.jpg" 
-                  alt="Before" 
-                  className="w-full h-[350px] object-cover rounded shadow-lg ring-4 ring-[#9B1B30]/10 transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-2xl" 
-                />
+  src="/images/before.jpg"
+  alt="Before"
+  className="w-full h-[350px] object-cover rounded transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-lg"
+/>
                 <span className="absolute top-4 left-4 bg-black/60 text-white px-4 py-1 rounded text-xs font-bold uppercase tracking-widest">Before</span>
               </div>
               <div className="relative group reveal reveal-stagger-1">
