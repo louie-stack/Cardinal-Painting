@@ -105,7 +105,7 @@ const Services: React.FC = () => {
           "Drywall repair",
           "Surface preparation & patching"
         ]}
-        image="https://picsum.photos/seed/interior-service/800/600"
+        image="/images/interior.jpg"
       />
 
       <ServiceSection
