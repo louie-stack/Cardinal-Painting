@@ -81,7 +81,7 @@ const Home: React.FC = () => {
             {[
               { title: 'Interior Painting', desc: 'Walls, ceilings, trim, and professional cabinet refinishing.', img: '/images/service-interior.jpg', link: '/services#service-interior' },
               { title: 'Exterior Painting', desc: 'Durable weather-resistant finishes tailored for the AZ climate.', img: '/images/service-exterior.jpg', link: '/services#service-exterior' },
-              { title: 'Residential Painting', desc: 'Full home repaints, touch-ups, and new construction projects.', img: 'https://picsum.photos/seed/res1/400/300', link: '/services#residential' },
+              { title: 'Residential Painting', desc: 'Full home repaints, touch-ups, and new construction projects.', img: '/images/service-residential.jpg', link: '/services#service-residential' },
               { title: 'Commercial Painting', desc: 'Professional retail, office, and multi-unit property solutions.', img: 'https://picsum.photos/seed/com1/400/300', link: '/services#commercial' },
             ].map((service, idx) => (
               <Link key={idx} to={service.link} className={`bg-white rounded overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-gray-100 reveal reveal-stagger-${idx}`}>
