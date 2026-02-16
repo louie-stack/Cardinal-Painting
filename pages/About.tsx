@@ -57,7 +57,11 @@ const About: React.FC = () => {
             </div>
             
             <div className="relative reveal reveal-stagger-1">
-              <img src="https://picsum.photos/seed/jason-bergmann/700/800" alt="Jason Bergmann - Cardinal Painting" className="rounded-lg shadow-2xl" />
+              <img 
+  src="/images/about-main.jpg" 
+  alt="Jason Bergmann - Cardinal Painting" 
+  className="rounded-lg shadow-2xl" 
+/>
               <div className="absolute -bottom-6 -right-6 bg-[#9B1B30] p-8 rounded text-white shadow-xl hidden md:block reveal reveal-stagger-3">
                 <p className="text-sm uppercase tracking-widest font-bold mb-1">Owner-Operated</p>
                 <p className="text-2xl font-bold">Licensed & Bonded</p>
