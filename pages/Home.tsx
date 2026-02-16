@@ -79,7 +79,7 @@ const Home: React.FC = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Interior Painting', desc: 'Walls, ceilings, trim, and professional cabinet refinishing.', img: 'https://picsum.photos/seed/int1/400/300', link: '/services#interior' },
+              { title: 'Interior Painting', desc: 'Walls, ceilings, trim, and professional cabinet refinishing.', img: '/images/service-interior.jpg', link: '/services#service-interior' },
               { title: 'Exterior Painting', desc: 'Durable weather-resistant finishes tailored for the AZ climate.', img: 'https://picsum.photos/seed/ext1/400/300', link: '/services#exterior' },
               { title: 'Residential Painting', desc: 'Full home repaints, touch-ups, and new construction projects.', img: 'https://picsum.photos/seed/res1/400/300', link: '/services#residential' },
               { title: 'Commercial Painting', desc: 'Professional retail, office, and multi-unit property solutions.', img: 'https://picsum.photos/seed/com1/400/300', link: '/services#commercial' },
