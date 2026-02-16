@@ -2,15 +2,51 @@ import React from 'react';
 
 const Portfolio: React.FC = () => {
   const projects = [
-    { title: "Gilbert Residence", type: "Full Exterior", img: "/images/portfolio-1.jpg" },
-    { title: "Modern Kitchen Refresh", type: "Cabinet Refinishing", img: "/images/portfolio-2.jpg" },
-    { title: "Chandler Estate", type: "Interior & Trim", img: "/images/portfolio-3.jpg" },
-    { title: "Retail Shop Front", type: "Commercial Exterior", img: "/images/portfolio-4.jpg" },
-    { title: "Val Vista Home", type: "Stucco Repair & Paint", img: "/images/portfolio-5.jpg" },
-    { title: "Luxury Living Room", type: "Interior Accent Walls", img: "/images/portfolio-6.jpg" },
-    { title: "East Valley Office", type: "Commercial Interior", img: "/images/portfolio-7.jpg" },
-    { title: "Power Ranch Property", type: "Deck & Wood Finishing", img: "/images/portfolio-8.jpg" },
-    { title: "Ocotillo Exterior", type: "HOA Compliant Finish", img: "/images/portfolio-9.jpg" },
+    { 
+      title: "Sedona-Style Residence", 
+      type: "Full Exterior Repaint", 
+      img: "/images/portfolio-1.jpg" 
+    },
+    { 
+      title: "Chandler Family Home", 
+      type: "Interior & Trim", 
+      img: "/images/portfolio-2.jpg" 
+    },
+    { 
+      title: "Gilbert Single-Family Home", 
+      type: "Exterior Repaint", 
+      img: "/images/portfolio-3.jpg" 
+    },
+    { 
+      title: "Luxury Living Space", 
+      type: "Interior Custom Finishes", 
+      img: "/images/portfolio-4.jpg" 
+    },
+    { 
+      title: "East Valley Business Center", 
+      type: "Commercial Exterior", 
+      img: "/images/portfolio-5.jpg" 
+    },
+    { 
+      title: "Backyard Patio Refresh", 
+      type: "Exterior & Patio Repaint", 
+      img: "/images/portfolio-6.jpg" 
+    },
+    { 
+      title: "Mesa Neighborhood Home", 
+      type: "HOA Compliant Finish", 
+      img: "/images/portfolio-7.jpg" 
+    },
+    { 
+      title: "Power Ranch Property", 
+      type: "Exterior Color Update", 
+      img: "/images/portfolio-8.jpg" 
+    },
+    { 
+      title: "Gilbert Two-Story Home", 
+      type: "Full Exterior Repaint", 
+      img: "/images/portfolio-9.jpg" 
+    },
   ];
 
   return (
@@ -40,6 +76,7 @@ const Portfolio: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all"></div>
               </div>
+
               <div className="p-6">
                 <p className="text-[#9B1B30] text-[10px] font-bold uppercase tracking-widest mb-1">
                   {project.type}
