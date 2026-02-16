@@ -123,7 +123,7 @@ const Services: React.FC = () => {
           "Pressure washing",
           "HOA-compliant color applications"
         ]}
-        image="https://picsum.photos/seed/exterior-service/800/600"
+        image="/images/service-exterior.jpg"
       />
 
       <ServiceSection
