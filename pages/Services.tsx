@@ -158,7 +158,7 @@ const Services: React.FC = () => {
           "Licensed, bonded, and insured",
           "Large scale exterior coatings"
         ]}
-        image="https://picsum.photos/seed/commercial-service/800/600"
+        image="/images/service-commercial.jpg"
       />
     </div>
   );
