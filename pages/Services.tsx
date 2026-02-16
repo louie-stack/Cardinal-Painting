@@ -140,7 +140,7 @@ const Services: React.FC = () => {
           "Accurate, free estimates",
           "Minimal home life disruption"
         ]}
-        image="https://picsum.photos/seed/residential-service/800/600"
+        image="/images/service-residential.jpg"
       />
 
       <ServiceSection
